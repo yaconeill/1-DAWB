@@ -1,0 +1,33 @@
+.slider-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
+  height: 360px;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s mov--der-izq infinite;
+  animation-play-state: running;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+.slider img {/* width: 55%; */float: left;}
+
+/*ANIMACIÓN*/
+
+@keyframes mov--der-izq {
+  0% { left: 0%; } /*empieza em posicion inicial*/
+  33.333% { left: 0%; } /*cambio de la primera a la segunda img*/
+  38.333% { left: -100%; } /*se queda parado*/
+  68.333% { left: -100%; } /*cambio de la segunda a la tercera img*/
+  73.333% { left: -200%; } /*se queda parado*/
+  93.333% { left: -200%; } /*Vuelve a mostrar la primera img para que no haya un salto repentino a la primera img*/
+  100% { left: -300%; }
+}

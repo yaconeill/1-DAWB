@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Win3enraya</name>
+    </assembly>
+    <members>
+        <member name="F:Win3enraya.Form1._boton">
+            <summary>
+            Creación variable de tipo array de botones.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1.N">
+            <summary>
+            Numero entero que indica el nº de casillas por fila/columna
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1._devolf">
+            <summary>
+            Declaración de un copia de la estructura de la clase Juego.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1.Turno">
+            <summary>
+            Atributo booleana usada para organizar el orden de turnos "true" para el jugador y "false" para la máquina
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1._turn">
+            <summary>
+            Areibuto de tipo resultado de diálogo para iniciar el turno según la respuesta del recibida.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1._ganadas">
+            <summary>
+            Variable que guarda las partidas ganadas.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1._perdidas">
+            <summary>
+            Variable que guarda las partidas perdidas.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1._empatadas">
+            <summary>
+            Variable que guarda las partidas empatadas.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Form1._enraya">
+            <summary>
+            Llamada al constructor para poder llamar a sus metodos de la clase juego
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Form1.Crea">
+            <summary>
+            Creacion de array de botones
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Form1.BInicia_Click(System.Object,System.EventArgs)">
+            <summary>
+            Asignado al boton inicia del juego, que desbloquea el panel y pregunta el orden de turnos
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Win3enraya.Form1.Movimiento(System.Object,System.EventArgs)">
+            <summary>
+            Gestiona los moviemientos del jugador y llama al moviento de la maquina
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Win3enraya.Form1.Click_Maquina(System.Object,System.EventArgs)">
+            <summary>
+            Gestiona los pasos que debe hacer la maquina
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Win3enraya.Form1.Ganador(System.Object,System.EventArgs)">
+            <summary>
+            Si ha ganado el jugador, la maquina o si se ha empatado muestra el mensaje correspondiente
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Win3enraya.Form1.Marcador">
+            <summary>
+            Guarda cada valor de la puntuación en el lugar correspondiente de la tabla.
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Form1.button1_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Método que borra el contenido de la tabla de puntuación.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Win3enraya.Form1.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Form1.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:Win3enraya.Form1.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:Win3enraya.Devolucion">
+            <summary>
+            Estructura creada para guardar las posiciones que se van escribir y que sirva de intercambio entre clases.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Devolucion.Fila">
+            <summary>
+            Posición de la fila donde se va escribir.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Devolucion.Columna">
+            <summary>
+            Posición de la columna donde se va escribir.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Devolucion.Ganador">
+            <summary>
+            1 gana jugador, 2 gana maquina, 3 empate, 0 inicio variable.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Devolucion.Empieza">
+            <summary>
+            1 gana jugador, 2 gana maquina.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego.n">
+            <summary>
+            Valor global de la clase que determina el tamaño máximo de filas/columnas.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._devol">
+            <summary>
+            Varible de tipo estructura para poder trabajar con la estructura creada.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._casilla">
+            <summary>
+            Array multidimensional que guarda las posiciones donde se escribe y compararlas para determinar ganador.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._ganaO">
+            <summary>
+            Determina que el ganador ha sido la O.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._ganaX">
+            <summary>
+            Determina que el ganador ha sido la X.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._continuar">
+            <summary>
+            Booleano para los while, para que mientras sea true no salga.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._seguir">
+            <summary>
+            Booleano que, una vez haya una jugada confirmada, no pase por el resto de posibles jugadas.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._segturno">
+            <summary>
+            Booleano que permite que en el segundo turno de la máquina, empezando ella, ponga su caracter en una esquina aleatoria.
+            </summary>
+        </member>
+        <member name="F:Win3enraya.Juego._contador">
+            <summary>
+            Comtador de cantidad de casillas para la comprobación del empate.
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Juego.#ctor">
+            <summary>
+            Constructor vacio para poder acceder desde otra clase
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Juego.Crear(System.Int32)">
+            <summary>
+            Array de string que guardará las posiciones, comprobar si se ha ganado o empatado, para enviarlas luego a la clase form1
+            Y pone valores por defecto al iniciar otra partida.
+            </summary>
+            <param name="defecto">Valor pasado desde form1 con dato por defecto de ganador en la estructura</param>
+        </member>
+        <member name="M:Win3enraya.Juego.Movimientojugador">
+            <summary>
+            Guarda la "X" en la posicion dada por fila y columna de la estruc. y devuelve esta última.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Win3enraya.Juego.Movimientomaquina(Win3enraya.Devolucion)">
+            <summary>
+            Genera un moviento acorde a cada jugada, intentando ganar, cubrir, poner una esquina o movimiento aleatorio si no hay otra opción.
+            </summary>
+            <returns>Devuelve la estructura devol con la posicion del movimiento</returns>
+        </member>
+        <member name="M:Win3enraya.Juego.Ganar">
+            <summary>
+            Hace una busqueda por toda la tabla, buscando una jugada que le permita ganar.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Win3enraya.Juego.NoPerder">
+            <summary>
+            Hace una busqueda por toda la tabla, buscando evitar perder, bloqueando la jugada del oponente.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Win3enraya.Juego.Esquina">
+            <summary>
+            Coloca en una esquina aleatoria en el segundo movimiento.
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Juego.Aleatorio">
+            <summary>
+            Hace una jugada aleatoria, si no hay otra opción.
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Juego.GanaFilas(System.Boolean)">
+            <summary>
+            Comprueba si hay tres "X" o "O" iguales en la misma fila
+            </summary>
+            <param name="turno">Determina el turno de juego, "true" para jugador y "false" para la máquina</param>
+        </member>
+        <member name="M:Win3enraya.Juego.GanaColumnas(System.Boolean)">
+            <summary>
+            Comprueba si hay tres "X" o "O" iguales en la misma columna
+            </summary>
+            <param name="turno">Determina el turno de juego, "true" para jugador y "false" para la máquina</param>
+        </member>
+        <member name="M:Win3enraya.Juego.GanaDiagonal1">
+            <summary>
+            Comprueba que la diagonal dcha-izda tenga el mismo texto y pone a "true" la propiedad ganador correspondiente
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Juego.GanaDiagonal2">
+            <summary>
+            Comprueba que la diagonal izda-dcha tenga el mismo texto y pone a "true" la propiedad ganador correspondiente
+            </summary>
+        </member>
+        <member name="M:Win3enraya.Juego.Empate">
+            <summary>
+            Si no ha ganado nadie, comprueba mediante una busqueda por toda la tabla que no hayan guiones
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Win3enraya.Juego.Comprobar(System.Boolean)">
+            <summary>
+            Agrupa todos los metodos de ganar y devuelve la estructura con el ganador en caso de haberlo
+            </summary>
+            <param name="turno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Win3enraya.Juego.PosiX(System.String,System.String,Win3enraya.Devolucion)">
+            <summary>
+            Guarda en el array la posicion recibida.
+            </summary>
+            <param name="fila">Posición de la fila del boton pulsado por el jugador</param>
+            <param name="col">Posición de la columna del boton pulsado por el jugador</param>
+            <param name="devolf">Copia de la estructura de la clase form</param>
+        </member>
+        <member name="M:Win3enraya.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:Win3enraya.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:Win3enraya.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:Win3enraya.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:Win3enraya.Properties.Resources.tic_tac_toe_game_wallpaper_800x480">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

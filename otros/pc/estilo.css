@@ -1,0 +1,438 @@
+html, body{
+	height: 100%;
+}
+body{
+	background: -webkit-linear-gradient(#3F88A5, #300);
+	background: linear-gradient(#3F88A5, #300);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: 1024px;
+	min-width: 1024px;
+	min-height: 936px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.wrapper{
+	position: relative;
+	float: left;
+	top: -50px;
+	width: 100%;
+	height: 84%;
+	background-color: #EEEEEE;
+}
+/*----------------------------------------HEADER-------------------------*/
+.titulo{
+	background-color: #264883;
+	width: 100%;
+	top: -51px;
+	height: 14%;
+	padding-top: 15px;
+	margin-top: -13px;
+	display: block;
+}
+#logo img{
+	width: 32%;
+	margin-left: 34%;
+	position: relative;
+}
+#dispositivo ul{
+	width: 100%;
+	margin: 0px;
+}
+#dispositivo a img{
+	transition: transform 1s;
+	-webkit-transition: transform 1s;
+}
+#dispositivo a:hover img{
+	transform: translateY(118px);
+	-webkit-transform: translateY(118px);
+}
+#dispositivo ul li{
+	position: relative;
+	float:left;
+	top: -128px;
+	list-style-type: none;
+	margin-right: -120px;
+}
+#dispositivo{
+	visibility: visible;
+	position: absolute;
+	top: 5px;
+	left: 1px;
+	width: 100%;
+	height: 10%;
+	z-index: 20;
+}
+.marcas{
+	width: 40%;
+	z-index: 20;
+}
+/*---------menu-----------*/
+*:after, *:before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+* {margin: 0; padding: 0; position: relative;}
+html {
+	font-family: lato,sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+}
+body {
+	padding: 4rem 5rem 0;
+	color: rgba(0,0,0,.5);
+}
+body::before {
+	content: '';
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 3rem;
+	width: 100%;
+	box-shadow: 0 0 8px rgba(0,0,0,.4);
+}
+#diana {
+	display: none;
+}
+.revertir {
+	text-indent: -8rem;
+	position: absolute;
+	width: 3rem;
+	height: 2.2rem;
+	top: 22.5rem;
+	left: 4.7rem;
+	z-index: 1;
+}
+.toggle {
+	display: block;
+	position: absolute;
+	top: 23.5rem;
+	left: 5.2rem;
+	height: .3rem;
+	width: 2.2rem;
+	background: rgba(0,0,0,.4);
+	border-radius: 3px;
+	transition: .3s linear;
+	z-index: 2;
+}
+.toggle:hover {background: #04A466;}
+.toggle::before, .toggle::after {
+	content: '';
+	background: inherit;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -.7rem;
+	transform: rotate(0deg);
+	border-radius: 3px;
+	transition: transform .3s linear, top .3s .2s;
+}
+.toggle::after {
+	top: .7rem;
+}
+#diana:target ~ .toggle {
+	background: rgba(0,0,0,0);
+	z-index: 1;
+}
+#diana:target ~ .toggle::before {
+	top: 0;
+	background: #3A4451;
+	transform: rotatez(45deg);
+	transform-origin: center center 0;
+}
+#diana:target ~ .toggle::after {
+	top: 0;
+	background: #3A4451;
+	transform: rotatez(-45deg);
+	transform-origin: center center 0;
+}
+#diana:target ~ .toggle::before,
+#diana:target ~ .toggle::after{
+	transition: background .5s, transform .3s linear .2s, top .3s;
+}
+#diana:target ~ .revertir {z-index: 2;}
+#diana:target ~ .revertir:hover + .toggle::after,
+#diana:target ~ .revertir:hover + .toggle::before {
+	background: #04A466;
+}
+.menu {
+	background: #fff;
+	position: absolute;
+	top: 24.92rem;
+	left: 80px;
+	box-shadow: 0 2px 8px rgba(0,0,0,.4);
+	width: 0;
+	overflow: hidden;
+	transition: width .4s;
+	z-index: 30;
+}
+.menu:hover {width: 16rem;}
+.toggle:hover ~ .menu {width: 2.3rem;}
+#diana:target ~ .menu {
+	width: 12rem;
+}
+.menu ul {
+	list-style-type: none;
+}
+.menu a {
+	display: block;
+	line-height: 2.5rem;
+	font-size: 1rem;
+	width: 20rem;
+	text-decoration: none;
+	color: #aaa;
+	border-bottom: 1px solid #ccc;
+}
+.menu a::before {
+	padding: 0 1.5rem 0 1rem;
+	display: inline-block;
+	color: #aaa;
+	font-size: 1.5rem;
+}
+.menu a:hover {
+	background: #34495e;
+	color: #fff;
+	border-right: 5px solid #f1c40f;
+}
+.menu a:hover::before {
+	color: #f1c40f;
+}
+.menu img{
+	top: 5px;
+}
+/*---------------fin   menu sandwich y aspas----------------*/
+.menu>ul>li:first-child>a:after{
+	content: url(../img/down.png);
+	position: relative;
+	display: inline-block;
+	transform: rotate(0deg);
+	top: 5px;
+	left: 30px;
+}
+.menu ul>li>ul>li>a{
+	padding-left: 25px;
+}
+.menu ul>li>ul>li img{
+	width: 8%;
+	padding-right: 10px;
+}
+.menu ul>li>ul>li{
+	position: absolute;
+	visibility: hidden;
+	top: 5px;
+	z-index: 20;
+}
+.menu ul>li:hover>ul>li{
+	position: relative;
+	visibility: visible;
+}
+.menu>ul>li:first-child>a:hover:after{
+	transform: rotate(-90deg);
+	top: 0px;
+}
+/*-----Fin--Menu-----------*/
+/*-------------------------------------FIN---HEADER-------------------------*/
+/*-----------------Banner------------*/
+.banner{
+	position: relative;
+	visibility: visible;
+	float:left;
+	top: -50px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 5;
+}
+#campo{
+	width: 100%;
+	animation: blur 4s 1;
+	filter: blur(4px);
+}
+#soldado{
+	position: absolute;
+	top: 5px;
+	left: 50px;
+	width: 18%;
+	animation: entrada 2s 1;
+}
+#disparo{
+	position: absolute;
+	width: 4%;
+	top: 23px;
+	left: 228px;
+	visibility: hidden;
+	animation: disparo 0.5s 5;
+	animation-delay: 3.5s;
+}
+#bf1tit{
+	position: absolute;
+	top: 60px;
+	right: 69px;
+	width: 42%;
+}
+/*----------Fin----Banner------------*/
+/*------------------------------------------------Panel Derecho-----------*/
+.wrapper>a>img{
+	position: absolute;
+	float: left;
+	top: -38px;
+	left: 10px;
+	width: 9%;
+	visibility: hidden;
+}
+nav{
+	/* visibility: hidden; */
+}
+.wrapper>a:hover + nav{
+	visibility: visible;
+}
+.distribuidores{
+	position: relative;
+	float:left;
+	left: 0px;
+	top: 9px;
+	width: 16%;
+	height: 32%;
+	background-color: #EEEEEE;
+	margin-left: 10px;
+	z-index: 10;
+}
+.distribuidores ul li{
+	list-style-type: none;
+	margin-left: -35px;
+}
+.distribuidores a{
+	text-decoration: none;
+	padding-right: 11px;
+}
+/*---------------------------------------Fin-----Panel Derecho------------*/
+/*------------------------------------Contenido------------------------------*/
+/*------------Tamano y diseno de cajas-------------*/
+.size{/* margin: 12px 15px 15px 15px; */}
+.decor{
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+}
+.decor > p{
+	background-color: #264883;
+	margin: 0px;
+	padding: 5px 5px 5px 15px;
+	color: wheat;
+	border-bottom: 5px solid teal;
+}
+.respon{
+	top: 0px;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+/*------------Fin--Tamano de cajas----------------*/
+section{
+	position: relative;
+	float: left;
+	top: -22px;
+	width: 79.9%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*--------------------------Fin-------Contenido------------------------------*/
+/*-----------------------------------------------Panel Izquierdo------------*/
+aside{
+	visibility: visible;
+	position:relative;
+	float:left;
+	top: 39px;
+	left: 0px;
+	background-color: #EEEEEE;
+	width: 20%;
+	height: 45%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+aside .size{
+	height: 100%;
+	overflow: auto;
+}
+aside div::-webkit-scrollbar {
+	display: none;
+}
+.oferta img{
+	width: 87%;
+	padding: 10px;
+}
+/*---------------------------------------Fin-----Panel Izquierdo------------*/
+/*---------------------------------------------FOOTER-----------------------*/
+footer{
+	position:relative;
+	float: left;
+	background-color: #264883;
+	color: white;
+	top: -21px;
+	width: 100%;
+}
+footer p{
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 0.8em;
+	padding-bottom: 5px;
+}
+footer div div:before{
+	position: relative;
+	float: left;
+	top: 11px;
+	content: "Recomendamos los siguientes metodos de pago, informate sobre ellos ";
+	margin-left: 260px;
+	padding-left: 15px;
+	color: black;
+}
+footer img{
+	position: relative;
+	float: left;
+	left: 320px;
+	top: 15px;
+	width: 35%;
+}
+#pie{margin-bottom: -10px;}
+#pie p{
+	border-bottom: 5px solid teal;
+}
+#metodospago{
+	position: relative;
+	float: left;
+	width: 100%;
+	top: 10px;
+	border-bottom: 5px;
+	border-bottom-color: teal;
+	background-color: white;
+	height: 83px;
+}
+/*-------------------------------------FIN------FOOTER-----------------------*/
+#goup{
+	position: absolute;
+	visibility: hidden;
+	bottom: 10px;
+	right: 2%;
+}
+@keyframes blur {
+	0%{filter: blur(0px);}
+	100%{filter: blur(4px);}
+}
+@keyframes entrada {
+	from {
+		transform: translate3d(-100%, 0, 0);
+		visibility: visible;
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes disparo {
+	from, 50%, to {
+		visibility: visible;
+		opacity: 1;
+	}
+	25%, 75% {
+		opacity: 0;
+	}
+}

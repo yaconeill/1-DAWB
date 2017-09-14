@@ -1,0 +1,6 @@
+A:\Git\Refactorizar\RefactorizaConsola\RefactorizaConsola\bin\Debug\RefactorizaConsola.exe.config
+A:\Git\Refactorizar\RefactorizaConsola\RefactorizaConsola\bin\Debug\RefactorizaConsola.exe
+A:\Git\Refactorizar\RefactorizaConsola\RefactorizaConsola\bin\Debug\RefactorizaConsola.pdb
+A:\Git\Refactorizar\RefactorizaConsola\RefactorizaConsola\obj\Debug\RefactorizaConsola.csprojResolveAssemblyReference.cache
+A:\Git\Refactorizar\RefactorizaConsola\RefactorizaConsola\obj\Debug\RefactorizaConsola.exe
+A:\Git\Refactorizar\RefactorizaConsola\RefactorizaConsola\obj\Debug\RefactorizaConsola.pdb

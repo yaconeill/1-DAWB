@@ -1,0 +1,13 @@
+A:\Git\WindowsForm\Win3enraya\Win3enraya\bin\Debug\Win3enraya.exe.config
+A:\Git\WindowsForm\Win3enraya\Win3enraya\bin\Debug\Win3enraya.exe
+A:\Git\WindowsForm\Win3enraya\Win3enraya\bin\Debug\Win3enraya.pdb
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.csprojResolveAssemblyReference.cache
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.Form1.resources
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.Properties.Resources.resources
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.csproj.GenerateResource.Cache
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.exe
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.pdb
+A:\Git\WindowsForm\Win3enraya\Win3enraya\bin\Debug\en\Win3enraya.resources.dll
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\Win3enraya.Form1.en.resources
+A:\Git\WindowsForm\Win3enraya\Win3enraya\obj\Debug\en\Win3enraya.resources.dll
+A:\Git\WindowsForm\Win3enraya\Win3enraya\bin\Debug\Win3enraya.XML

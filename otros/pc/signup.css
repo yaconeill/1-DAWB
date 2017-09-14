@@ -1,0 +1,106 @@
+.registro{
+	margin: 0px 0px 0px 0px;
+	height: 80%;
+}
+
+section{
+	position: relative;
+	float: left;
+	left: 0px;
+	top: 40px;
+	background-color: #EEEEEE;
+	width: 77%;
+	height: 97%;
+	margin-left: 10px;
+	margin-right: auto;
+}
+.img{
+	position: relative;
+	float: left;
+	width: 40%;
+	margin: 10px -106px 0px 10px;
+}
+.img img{
+	width: 58%;
+}
+input[type=text], input[type=password], input[type=email],input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=date] {
+    width: 47%;
+    padding: 12px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[name=username] {
+    width: 49%;
+    padding: 12px 8px;
+    text-align: center;
+    margin-left: 206px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    margin: 5px 7px;
+    border: none;
+    cursor: pointer;
+    width: 79%;
+}
+.cancelbtn, button[type=reset] {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #3694f4;
+    border: none;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+#registro{
+	margin-top: 5px;
+}
+#registro div>table{
+	margin: auto;
+}
+#registro fieldset{
+	background-color: #EAEAEA;
+	margin-top: 5px;
+}
+#registro legend{
+	border: 2px solid #EAEAEA;
+	background-color: white;
+}
+#otrosdatos{
+	margin: 15px auto;
+}
+#otrosdatos td{
+	width: 100px;
+}
+/*--------------------------Fin-------Contenido------------------------------*/
